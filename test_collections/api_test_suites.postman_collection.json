@@ -161,7 +161,7 @@
 						"exec": [
 							"pm.test(\"should_return_409\", function () {\r",
 							"    //assert status code is 200\r",
-							"    pm.response.to.have.status(409);\r",
+							"    pm.response.to.have.status(400);\r",
 							"});\r",
 							""
 						],
