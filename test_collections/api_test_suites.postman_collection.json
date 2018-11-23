@@ -14,7 +14,7 @@
 						"id": "e433604c-271e-4a6e-a114-d962099258c4",
 						"exec": [
 							"pm.test(\"message_found_return_200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.have.status(201);\r",
 							"});\r",
 							"\r",
 							"pm.test(\"message_found_return_correct_json\", function () {\r",
