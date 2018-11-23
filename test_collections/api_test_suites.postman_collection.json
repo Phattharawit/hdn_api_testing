@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5d4a010e-c0e2-411d-b2f4-79e1d6c7a87b",
+		"_postman_id": "b7c367e9-889c-40a1-a92b-eaaf08c6a07a",
 		"name": "api_test_suites",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -153,21 +153,38 @@
 		},
 		{
 			"name": "DeleteUnProcessedLxMessage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6124575a-0fb4-4178-8ed8-cf6af44216df",
+						"exec": [
+							"pm.test(\"should_return_409\", function () {\r",
+							"    //assert status code is 200\r",
+							"    pm.response.to.have.status(409);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{service_url}}/api/messages",
+					"raw": "{{service_url}}/api/messages/LX_1534414920",
 					"host": [
 						"{{service_url}}"
 					],
 					"path": [
 						"api",
-						"messages"
+						"messages",
+						"LX_1534414920"
 					]
 				}
 			},
