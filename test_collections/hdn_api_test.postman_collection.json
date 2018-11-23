@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "b7c367e9-889c-40a1-a92b-eaaf08c6a07a",
+		"name": "hdn_api_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetMessageByValidFileName",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d8f0e238-e17d-44b4-907b-2e73a5ff0c66",
+						"exec": [
+							"pm.test(\"message_found_return_200\", function () {\r",
+							"    //assert status code is 200\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"response_json_correct_format\", function () {\r",
+							"    \r",
+							"    var jsonData = pm.response.json();\r",
+							"    var responseModel = jsonData.Data;\r",
+							"    \r",
+							"    //expected model\r",
+							"    var model = {\r",
+							"        Action: null,\r",
+							"        Base64String: null,\r",
+							"        FileName: null,\r",
+							"        FileType: null,\r",
+							"        MessageType: null\r",
+							"    }\r",
+							"    \r",
+							"    for (var propName in responseModel) {\r",
+							"        //assert response model spec are identical with our model\r",
+							"       pm.expect(model.hasOwnProperty(propName)).to.equal(true);  \r",
+							"    }\r",
+							"}); "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{service_url}}/api/messages/LX_1534415074",
+					"host": [
+						"{{service_url}}"
+					],
+					"path": [
+						"api",
+						"messages",
+						"LX_1534415074"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMessageByInvalidFileName",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57951f60-2374-4eed-a521-805fc087a3b7",
+						"exec": [
+							"pm.test(\"message_notfound_return_404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"message_notfound_return_error_message\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Description).to.equal(\"Requested_Resource_Not_Found\");  \r",
+							"});\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{service_url}}/api/messages/never_existing_filename",
+					"host": [
+						"{{service_url}}"
+					],
+					"path": [
+						"api",
+						"messages",
+						"never_existing_filename"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUnProcessedLxMessage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6124575a-0fb4-4178-8ed8-cf6af44216df",
+						"exec": [
+							"pm.test(\"should_return_409\", function () {\r",
+							"    pm.response.to.have.status(409);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{service_url}}/api/messages/LX_1534414920",
+					"host": [
+						"{{service_url}}"
+					],
+					"path": [
+						"api",
+						"messages",
+						"LX_1534414920"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
