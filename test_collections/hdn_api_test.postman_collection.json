@@ -13,9 +13,12 @@
 					"script": {
 						"id": "64d9f268-d12d-4e47-a5de-e7b5c9d88801",
 						"exec": [
-							"pm.test(\"GetMessage_ValidFileName_ReturnOk\", function () {\r",
-							"    //assert status code is 200\r",
+							"pm.test(\"GetMessageList_Nofilter_ReturnOk\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"GetMessageList_Nofilter_ResponseLessThan200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -67,8 +70,8 @@
 					"script": {
 						"id": "d8f0e238-e17d-44b4-907b-2e73a5ff0c66",
 						"exec": [
+							"\r",
 							"pm.test(\"GetMessage_ValidFileName_ReturnOk\", function () {\r",
-							"    //assert status code is 200\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
@@ -77,7 +80,7 @@
 							"    var jsonData = pm.response.json();\r",
 							"    var responseModel = jsonData.Data;\r",
 							"    \r",
-							"    //expected model\r",
+							"    //expected model shape\r",
 							"    var model = {\r",
 							"        Action: null,\r",
 							"        Base64String: null,\r",
@@ -87,10 +90,21 @@
 							"    }\r",
 							"    \r",
 							"    for (var propName in responseModel) {\r",
-							"        //assert response model spec are identical with our model\r",
+							"        //assert response model spec are identical with the expected model shape\r",
 							"       pm.expect(model.hasOwnProperty(propName)).to.equal(true);  \r",
 							"    }\r",
 							"}); "
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "bcf6b486-667c-438c-97cb-d816675115cb",
+						"exec": [
+							"//setup\r",
+							"pm.environment.set(\"existingFileName\", \"LX_1534415074\");"
 						],
 						"type": "text/javascript"
 					}
@@ -114,14 +128,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{service_url}}/api/messages/LX_1534415074",
+					"raw": "{{service_url}}/api/messages/{{existingFileName}}",
 					"host": [
 						"{{service_url}}"
 					],
 					"path": [
 						"api",
 						"messages",
-						"LX_1534415074"
+						"{{existingFileName}}"
 					]
 				}
 			},
@@ -141,9 +155,21 @@
 							"\r",
 							"pm.test(\"GetMessage_InValidFileName_ReturnErrorMessage\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.Description).to.equal(\"Requested_Resource_Not_Found\");  \r",
+							"    var fileName = pm.environment.get(\"notExitingFileName\");\r",
+							"    pm.expect(jsonData.Data.ExceptionMessage).to.equal(\"File: \" + fileName + \" not found.\");  \r",
 							"});\r",
 							" "
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "59bcc2d9-c2ae-4551-a874-d4d469c9fcf1",
+						"exec": [
+							"//setup\r",
+							"pm.environment.set(\"notExitingFileName\", \"aaaa\");"
 						],
 						"type": "text/javascript"
 					}
@@ -167,14 +193,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{service_url}}/api/messages/never_existing_filename",
+					"raw": "{{service_url}}/api/messages/{{notExitingFileName}}",
 					"host": [
 						"{{service_url}}"
 					],
 					"path": [
 						"api",
 						"messages",
-						"never_existing_filename"
+						"{{notExitingFileName}}"
 					]
 				}
 			},
@@ -188,10 +214,28 @@
 					"script": {
 						"id": "6124575a-0fb4-4178-8ed8-cf6af44216df",
 						"exec": [
-							"pm.test(\"GetMessage_InValidFileName_ReturnConflict\", function () {\r",
+							"pm.test(\"DeleteMessage_UnProcessedLxMessage_ReturnConflict\", function () {\r",
 							"    pm.response.to.have.status(409);\r",
 							"});\r",
+							"\r",
+							"pm.test(\"DeleteMessage_UnProcessedLxMessage_ReturnErrorMessage\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    var fileName = pm.environment.get(\"UnProcessedLxFileName\");\r",
+							"    pm.expect(jsonData.Data.ExceptionMessage).to.equal(\"Unprocessed LX Message cannot be deleted : \" + fileName);  \r",
+							"});\r",
+							"\r",
 							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8202c7f4-d1c0-4345-8de0-d64a284f80fe",
+						"exec": [
+							"//setup\r",
+							"pm.environment.set(\"UnProcessedLxFileName\", \"LX_1534414920\");"
 						],
 						"type": "text/javascript"
 					}
@@ -215,14 +259,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{service_url}}/api/messages/LX_1534414920",
+					"raw": "{{service_url}}/api/messages/{{UnProcessedLxFileName}}",
 					"host": [
 						"{{service_url}}"
 					],
 					"path": [
 						"api",
 						"messages",
-						"LX_1534414920"
+						"{{UnProcessedLxFileName}}"
 					]
 				}
 			},
