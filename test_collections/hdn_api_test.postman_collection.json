@@ -18,7 +18,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"GetMessageList_Nofilter_ResponseLessThan200ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -50,13 +50,19 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{service_url}}/api/messages",
+					"raw": "{{service_url}}/api/messages?messageId=test",
 					"host": [
 						"{{service_url}}"
 					],
 					"path": [
 						"api",
 						"messages"
+					],
+					"query": [
+						{
+							"key": "messageId",
+							"value": "test"
+						}
 					]
 				}
 			},
