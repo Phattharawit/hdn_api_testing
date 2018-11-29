@@ -1,0 +1,70 @@
+{
+  "id": "4f3f909d-086d-4701-926c-26c9d4360d90",
+  "version": "1.1",
+  "name": "test2",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "d1703ced-c793-4672-b5c8-bb946309620a",
+    "name": "Untitled",
+    "commands": [{
+      "id": "cffadd3f-3339-4860-aa72-e12c4e0f3a43",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6763b114-e9bc-458a-b2ed-0a6ded9541b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1069x763",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17d5af7a-789c-4394-900c-8b56a261f38a",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "brandnewday"
+    }, {
+      "id": "27fd0538-a495-480c-a668-7b2fc7523569",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "bc549e21-5fd3-4a73-97e1-ecb15001f96f",
+      "comment": "",
+      "command": "close",
+      "target": "win_ser_local",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ef8b1b97-8c54-4cfe-9ab3-8d30c45399b3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d1703ced-c793-4672-b5c8-bb946309620a"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
