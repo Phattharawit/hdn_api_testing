@@ -48,13 +48,6 @@
         ["xpath=//div/div/input", "xpath:position"]
       ],
       "value": "${KEY_ENTER}"
-    }, {
-      "id": "bc549e21-5fd3-4a73-97e1-ecb15001f96f",
-      "comment": "",
-      "command": "close",
-      "target": "win_ser_local",
-      "targets": [],
-      "value": ""
     }]
   }],
   "suites": [{
