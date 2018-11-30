@@ -1456,12 +1456,19 @@
       ],
       "value": "clientId"
     }, {
+      "id": "55837e91-ee2b-4374-b7db-f4bd5e4c2503",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "6f1ddcf7-15b7-4c38-80e3-dbc7f0cf7214",
       "comment": "",
       "command": "waitForElementVisible",
       "target": "css=#tabFlowChange > span.rtsOut > span.rtsIn > span.rtsTxt",
       "targets": [],
-      "value": "500000"
+      "value": "50000"
     }, {
       "id": "9513e729-d2f0-4040-b379-728171faa617",
       "comment": "",
@@ -1541,20 +1548,6 @@
       "comment": "",
       "command": "open",
       "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d771fe8f-734d-4343-b2c8-a536bb25d57b",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "779a7b13-f426-4d09-a4b7-33b407f51eb4",
-      "comment": "",
-      "command": "pause",
-      "target": "1000",
       "targets": [],
       "value": ""
     }, {
