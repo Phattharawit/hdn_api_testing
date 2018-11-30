@@ -1461,7 +1461,7 @@
       "command": "waitForElementVisible",
       "target": "css=#tabFlowChange > span.rtsOut > span.rtsIn > span.rtsTxt",
       "targets": [],
-      "value": "50000"
+      "value": "500000"
     }, {
       "id": "9513e729-d2f0-4040-b379-728171faa617",
       "comment": "",
@@ -1547,14 +1547,14 @@
       "id": "d771fe8f-734d-4343-b2c8-a536bb25d57b",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1838x1060",
+      "target": "1920x1080",
       "targets": [],
       "value": ""
     }, {
       "id": "779a7b13-f426-4d09-a4b7-33b407f51eb4",
       "comment": "",
       "command": "pause",
-      "target": "500",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
