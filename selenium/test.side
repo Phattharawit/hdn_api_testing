@@ -4060,6 +4060,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "fee021d6-af51-4f9a-a283-3556824616f0",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "fe61fad2-e5a2-4e3f-9974-c0a9006aa8d7",
       "comment": "",
       "command": "sendKeys",
