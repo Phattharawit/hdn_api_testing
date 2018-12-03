@@ -1551,6 +1551,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "f363944a-d253-4bc7-8e7d-cbf5b33c8342",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "a356996f-9b2d-43c9-8af2-6e00ea58406b",
       "comment": "",
       "command": "click",
@@ -2566,6 +2573,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "edc98691-426e-4bed-a5e6-4e59a973439a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "e012965f-c135-45ab-83a6-c9229603f0e9",
       "comment": "",
       "command": "click",
@@ -3095,6 +3109,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "3cc788e6-b06d-45ec-abcc-bc4ac05ba86e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "1ba5a8a3-008b-4cce-9384-2340f2c7cf7a",
       "comment": "",
       "command": "click",
@@ -3267,6 +3288,13 @@
       "comment": "",
       "command": "open",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4835b73d-68e6-4368-beee-9f0102b2b733",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
       "targets": [],
       "value": ""
     }, {
@@ -3640,6 +3668,13 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "f9a5aca6-249e-4901-9d24-a11ba136cb39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "044436f6-d923-4853-9316-c93b62051027",
       "comment": "",
       "command": "click",
@@ -3819,6 +3854,13 @@
       "comment": "",
       "command": "open",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1bc304f-3484-4db0-92a6-5d4173d84c43",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
       "targets": [],
       "value": ""
     }, {
@@ -4036,6 +4078,13 @@
       "comment": "",
       "command": "open",
       "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1406196c-1e9c-49a7-89b1-e0e7b7eda9e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
       "targets": [],
       "value": ""
     }, {
