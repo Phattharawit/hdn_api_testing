@@ -1551,73 +1551,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "f363944a-d253-4bc7-8e7d-cbf5b33c8342",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a356996f-9b2d-43c9-8af2-6e00ea58406b",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1e49d492-ed75-4346-a704-0b33782d0835",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_DdlSearchType",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_DdlSearchType", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$DdlSearchType", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_DdlSearchType", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_DdlSearchType", "css:finder"],
-        ["xpath=//select[@id='ctl00_ctl00_ctl00_CPH_DdlSearchType']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/select", "xpath:idRelative"],
-        ["xpath=//select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "74b1e652-afcb-4962-9fca-025c75801cf9",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_DdlSearchType",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_DdlSearchType", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$DdlSearchType", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_DdlSearchType", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_DdlSearchType", "css:finder"],
-        ["xpath=//select[@id='ctl00_ctl00_ctl00_CPH_DdlSearchType']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/select", "xpath:idRelative"],
-        ["xpath=//select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "d4a11c60-d6f3-473e-9ba3-49fed941daaf",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "a91c0fe8-09ef-4665-add0-fda2f031405b",
       "comment": "",
       "command": "type",
@@ -2573,28 +2506,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "edc98691-426e-4bed-a5e6-4e59a973439a",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e012965f-c135-45ab-83a6-c9229603f0e9",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "c5eb3eda-5ba5-4c6d-b1c8-f2b067c1b232",
       "comment": "",
       "command": "type",
@@ -3109,28 +3020,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "3cc788e6-b06d-45ec-abcc-bc4ac05ba86e",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1ba5a8a3-008b-4cce-9384-2340f2c7cf7a",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "db9863d5-018d-41dc-8d72-2e2f99f3a66c",
       "comment": "",
       "command": "type",
@@ -3289,28 +3178,6 @@
       "command": "open",
       "target": "",
       "targets": [],
-      "value": ""
-    }, {
-      "id": "4835b73d-68e6-4368-beee-9f0102b2b733",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "45af63ad-f448-41fc-be67-d926ebad509e",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
       "value": ""
     }, {
       "id": "4649e6ef-1153-45b4-a601-917f9502a68e",
@@ -3668,28 +3535,6 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "f9a5aca6-249e-4901-9d24-a11ba136cb39",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "044436f6-d923-4853-9316-c93b62051027",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "9ccae72a-64c9-4a20-b950-7afda4705f4c",
       "comment": "",
       "command": "type",
@@ -3855,28 +3700,6 @@
       "command": "open",
       "target": "",
       "targets": [],
-      "value": ""
-    }, {
-      "id": "b1bc304f-3484-4db0-92a6-5d4173d84c43",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c208491e-b955-4cf2-8067-70b316f26a58",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
       "value": ""
     }, {
       "id": "7bd7a9d7-5ee2-4795-9308-649ba4dce359",
@@ -4079,28 +3902,6 @@
       "command": "open",
       "target": "",
       "targets": [],
-      "value": ""
-    }, {
-      "id": "1406196c-1e9c-49a7-89b1-e0e7b7eda9e8",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1920x1080",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0407aa05-90d8-4a44-b0b1-a73b4c00d5ec",
-      "comment": "",
-      "command": "click",
-      "target": "id=ctl00_ctl00_ctl00_CPH_TextboxClientID",
-      "targets": [
-        ["id=ctl00_ctl00_ctl00_CPH_TextboxClientID", "id"],
-        ["name=ctl00$ctl00$ctl00$CPH$TextboxClientID", "name"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css"],
-        ["css=#ctl00_ctl00_ctl00_CPH_TextboxClientID", "css:finder"],
-        ["xpath=//input[@id='ctl00_ctl00_ctl00_CPH_TextboxClientID']", "xpath:attributes"],
-        ["xpath=//div[@id='QuickClient']/input", "xpath:idRelative"],
-        ["xpath=//div[3]/div/input", "xpath:position"]
-      ],
       "value": ""
     }, {
       "id": "b41104ac-f441-4490-a049-3d4ff24da347",
